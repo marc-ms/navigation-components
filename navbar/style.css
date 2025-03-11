@@ -1,0 +1,31 @@
+* {
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    box-shadow: 10px 16px 10px black;
+    
+}
+
+h1 {
+    margin-right: auto;
+}
+
+h1:hover {
+    cursor: pointer;
+}
+
+#button-container {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    all: unset;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
