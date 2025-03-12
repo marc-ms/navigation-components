@@ -1,24 +1,39 @@
 * {
+    margin: 0;
+}
+
+#nav-container {
+    display: flex;
+    height: 100px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+/* gradient background, clipping text and color text tramsparent */
+#nav-logo>h1 {
+    background-image: linear-gradient(to right, red, yellow);
+    background-clip: text;
+    color: transparent;
+}
+
+#menu {
+    display: flex;
+    gap: 20px;
     margin: 10px;
 }
 
-nav {
+#bar-menu {
     display: flex;
-    box-shadow: 10px 16px 10px black;
-    
-}
-
-h1 {
-    margin-right: auto;
-}
-
-h1:hover {
-    cursor: pointer;
-}
-
-#button-container {
-    display: flex;
-    gap: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -29,3 +44,23 @@ button:hover {
     cursor: pointer;
 }
 
+@media (max-width: 800px) {
+    #nav-container {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    button {
+        display: none;
+    }
+
+    #bar-menu {
+        display: flex;
+    }
+
+
+}
